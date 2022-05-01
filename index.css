@@ -1,0 +1,36 @@
+.side-image,
+.in-col-image {
+  position: relative;
+  margin-bottom: 80px;
+}
+.small-image {
+  height: 30vh;
+  width: 10vw;
+  position: absolute;
+  left: 80%;
+  bottom: 20%;
+  background: transparent;
+  box-shadow: 10px 10px 5px #ccc;
+}
+
+.in-col-image {
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+  .side-image {
+    display: none;
+  }
+  .in-col-image {
+    display: block;
+  }
+  .small-image {
+    width: 25vw;
+    bottom: -10%;
+    height: 20vh;
+  }
+}
+
+.black-box {
+  background-color: black;
+  height: 30px;
+}
